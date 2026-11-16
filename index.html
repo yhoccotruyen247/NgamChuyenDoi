@@ -287,7 +287,7 @@
       var callbackName = "postingStatusCallback_" + Date.now() + "_" + Math.floor(Math.random() * 1000000);
       var script = document.createElement("script");
       var finished = false;
-      var timeoutId = setTimeout(function() { finish(new Error("Apps Script không phản hồi.")); }, 150000);
+      var timeoutId = setTimeout(function() { finish(new Error("Apps Script không phản hồi.")); }, 90000);
       function finish(error, result) {
         if (finished) return;
         finished = true;
